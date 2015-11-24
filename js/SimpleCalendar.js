@@ -1,6 +1,5 @@
-/*
-*  Calendar jquery
-*/
+/* Calendar jquery  */
+
     $.widget( "custom.SimpleCalendar", {
         options: {
          	lang: {
