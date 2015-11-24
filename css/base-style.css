@@ -1,0 +1,236 @@
+.calendar
+{
+	overflow: hidden;
+	border: 2px solid #2E75B6;
+	width: 124px;
+	height: 22px;
+}
+
+.calendar input
+{
+	margin-top:	 1px;
+	width:	100px;
+	float:	left;
+	height:	18px;
+	border:	 medium none;
+}
+
+.calendar .btnWrapper
+{
+	float : left;
+	height : 22px;
+	width : 22px;
+	background-color :#2E75B6;	
+
+}
+.calendar .btnWrapper .detailBtn
+{
+	width : 22px;
+	height : 22px;
+	background : url("data:image/svg+xml;base64,PHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB2ZXJzaW9uPSIxLjEiCiAgIGlkPSJzdmcyIgogICB2aWV3Qm94PSIwIDAgMjAgMjAiCiAgIGhlaWdodD0iMjAiCiAgIHdpZHRoPSIyMCI+CiAgPGRlZnMKICAgICBpZD0iZGVmczQiIC8+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhNyI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzpmb3JtYXQ+aW1hZ2Uvc3ZnK3htbDwvZGM6Zm9ybWF0PgogICAgICAgIDxkYzp0eXBlCiAgICAgICAgICAgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIgLz4KICAgICAgICA8ZGM6dGl0bGU+PC9kYzp0aXRsZT4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPGcKICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLC0xMDMyLjM2MjIpIgogICAgIGlkPSJsYXllcjEiPgogICAgPHBhdGgKICAgICAgIGlkPSJwYXRoNDE0MiIKICAgICAgIGQ9Im0gMy43MDY1NzU2LDEwMzkuNDYyMSA2LjMzODA2NzQsNi4yODE5IDYuMzM4MDY3LC02LjI4MTkiCiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTojOWRjM2U2O3N0cm9rZS13aWR0aDowLjcwMTEwMzM5cHg7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICA8L2c+Cjwvc3ZnPg==");
+	cursor: pointer;
+}
+.calendar .btnNextMonth 
+{ 
+	width : 15px;
+	height : 15px;
+	float : left;
+	margin : 5px;
+	overflow : hidden;
+}
+
+.calendar .btnNextMonthWrapper 
+{
+	width : 11px;
+	height: 11px;
+	margin-left : -6px;
+	margin-top : 2px;
+	transform : rotate(45deg);
+	background-color : #2E75B6;
+	cursor: pointer;
+
+}
+		
+.calendar .btnPrevMonthWrapper 
+{
+
+	width : 11px;
+	height: 11px;
+	margin-left : 10px;
+	margin-top : 2px;
+	transform : rotate(45deg);
+	background-color : #2E75B6;
+	cursor: pointer;
+}	
+		
+.calendar .btnPrevMonth 
+{
+	overflow  : hidden;
+	width  : 15px;
+	height  : 15px;
+	float  : left;
+	margin : 5px;
+
+}
+
+.calendar .curentMonthText, .curentYearText 
+{
+
+	float: left;
+	width: 80px;
+}
+
+.calendar .curentMonthWrapper:after 
+{
+	content: "";
+	border-style  : solid;
+	top: 25px;
+	position : absolute;
+	border-width : 10px 15px 0 0;
+	border-color : #1F4E79 transparent transparent transparent;
+	display : block;
+	right : 0px;
+	position : absolute";float = "left;
+
+}
+
+.calendar .curentMonthWrapper:before 
+{
+	content: "";
+	border-style  : solid;
+	border-width : 0 15px 10px 0;
+	top: 25px;
+	border-color : transparent #1F4E79 transparent transparent;
+	position : absolute;
+	left : 0px;
+}
+.calendar .gridWrapper
+{
+	padding : 5px;
+	width : calc(250px - 2*8px - 10px);
+	height : calc(150px -10px);
+	margin-left : 8px;
+	background-color : #5B9BD5;
+	float : left;
+	margin-top : 30px;
+	
+}
+
+.calendar .calendarWrapper
+{
+
+	
+	position: absolute;
+	margin-top: 45px;
+	left: 106px;
+	padding-top: 5px;
+	background-color: #2E75B6;
+	width: 250px;
+	height: 210px;
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #1F4E79;
+}
+
+	
+.calendar .calendarWrapper:before
+{
+	content: "";
+	position : absolute;
+	top : -9px;
+	left : 10px;
+	border-bottom : 11px solid #2E75B6;
+	border-left : 8px solid transparent;
+	border-right : 8px solid transparent;
+}
+		
+.calendar .wrapper
+{
+	position : absolute;
+	margin-top : 45px;
+	left : 106px;
+	padding-top : 5px;
+	background-color : #2E75B6;
+	position : absolute;
+	width : 250px;
+	height : 190px;
+	position : absolute;
+	z-index : 100;
+	font-family : Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	font-size : 14px;
+	line-height : 20px;
+	color : #1F4E79;
+}
+
+.calendar .curentMonthWrapper
+{
+	position: absolute;
+	width: calc(250px + 2 * 15px);
+	height: 25px;
+	left: -15px;
+	text-align: center;
+	background-color: #9DC3E6;
+}
+
+.calendar table
+{
+	text-align : center;
+	width : calc(250px - 2*8px - 10px);
+	height : calc(150px - 10px);
+	border : 1px solid #1F4E79;
+	border-collapse :  collapse;
+}
+
+.calendar tr
+{
+	border: 1px solid #1F4E79;
+}
+
+.calendar table .otherDays:hover
+{
+	background-color: #9DC3E6;
+
+}
+
+.calendar table .curentMonth:hover
+{
+	background-color: #9DC3E6;
+
+}
+
+.calendar table .otherDays
+{
+	border-left : 1px solid #1F4E79;
+	color : #7F7F7F;
+	cursor: pointer;
+}
+
+.calendar table .curentMonth
+{
+	border-left : 1px solid #1F4E79;
+	color : #1F4E79;
+	cursor: pointer;
+}
+
+.calendar table .selectedCell
+{
+	cursor: pointer;
+	background-color : #1F4E79;
+	color :#9DC3E6;
+	border-left : 1px solid #1F4E79;
+	
+
+}
+.weekday-td
+{
+	border-left: 1px solid #1F4E79;
+	border-collapse: collapse;
+	font-size: 10px;
+
+}
+.weekday-td.last
+{
+	color: red;
+}
+
