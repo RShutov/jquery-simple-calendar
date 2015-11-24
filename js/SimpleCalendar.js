@@ -10,7 +10,7 @@
          		dateError: "Wrong date",
          	},
          	datePattern: "[0-3][0-9]-((0[1-9])|(1[0-2])){1,1}-((19[0-9]{2,2})|(2[0-9]{3,3})){1,1}",
-         	datePlaceHolder: "DD-MM-YYYY",
+         	datePlaceholder: "DD-MM-YYYY",
          	MAX_YEAR: 3000,
 			MIN_YEAR: 1900,
         },
@@ -24,7 +24,7 @@
 						$("<input>").attr({	
 							"class": "dateinput",
 							"pattern" : $thisWidget.options.datePattern,
-							"placeholder": $thisWidget.options.datePlaceHolder
+							"placeholder": $thisWidget.options.datePlaceholder
 						})
 					);
 					$element.append($("<div>").attr("class", "btnWrapper")
